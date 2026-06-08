@@ -5,12 +5,9 @@ function toggleZimbelstern() {
   const btn = document.getElementById("zimbelBtn");
 
   if (!isPlaying) {
-    zimbel = new Audio("img/Zimbelstern.wav")
-
-    zimbel = new Audio("zimbelstern.mp3");
+    zimbel = new Audio("img/Zimbelstern.wav");
     zimbel.loop = true;
     zimbel.play();
-    
 
     isPlaying = true;
     btn.textContent = "ON";
@@ -25,5 +22,3 @@ function toggleZimbelstern() {
     btn.classList.remove("active");
   }
 }
-
-document.getElementById("star").classList.add("spinning");
