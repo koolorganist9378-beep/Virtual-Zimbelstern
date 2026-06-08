@@ -9,10 +9,12 @@
       background-color: gold;
       color: black;
       padding: 20px;
-      font-size: 18px;
       border: none;
-      border-radius: 10px;
+      border-radius: 100px;
       cursor: pointer;
+      width: 400px;
+      height: 400px;
+      font-size: 28px;
     }
 
     .active {
