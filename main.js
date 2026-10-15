@@ -22,3 +22,18 @@ function toggleZimbelstern() {
     btn.classList.remove("active");
   }
 }
+
+let audioContext;
+let audioBuffer;
+let source;
+
+async function loadAudio() {
+    audioContext = new AudioContext();
+
+    const response = await fetch("img/Zimbelstern.wav");
+    const arrayBuffer = await response.arrayBuffer();
+
+    audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+}
+
+loadAudio();
